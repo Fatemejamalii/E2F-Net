@@ -31,15 +31,23 @@ To use the pre-trained models, download them from the following links then copy 
 
 ### Quick Testing
 ```
-python test.py test --pretrained_models_path PRETRAINED_PATH --load_checkpoint checkpoints_path/weights \
---id_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_ID --attr_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_ID \
---mask_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_mask --output_dir OUTPUT_PATH --test_func opt_infer_pairs --epochnum EPOCH_NUM
+python test.py test --pretrained_models_path PRETRAINED_PATH \
+--load_checkpoint checkpoints_path/weights \
+--id_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_ID \
+--attr_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_ID \
+--mask_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_mask \
+--output_dir OUTPUT_PATH --test_func opt_infer_pairs --epochnum EPOCH_NUM
+
 ```
 
 ### Training
 ```
-python main.py train_1 --resolution 256 --pretrained_models_path PRETRAINED_PATH --batch_size BATCHSIZE --cross_frequency 0 --train_data_size 24554 --test_frequency 1000 \
---results_dir RESULTS_DIR --dataset_path DATASET256 --no_train_real_attr --no_test_real_attr --no_test_with_arcface --celeba_path CELEBA_DATASET_PATH \
---celeba_ws_path CELEBA_DATASET_PATH --wich_dataset celeba --initial_epoch 0 --no_W_D_loss --arcface_checkpoints checkpoints_path/arc_res50/ \
+python main.py train_1 --resolution 256 --pretrained_models_path PRETRAINED_PATH \
+--batch_size BATCHSIZE --cross_frequency 0 --train_data_size 24554 --test_frequency 1000 \
+--results_dir RESULTS_DIR --dataset_path DATASET256 --no_train_real_attr \
+--no_test_real_attr --no_test_with_arcface --celeba_path CELEBA_DATASET_PATH \
+--celeba_ws_path CELEBA_DATASET_PATH --wich_dataset celeba --initial_epoch 0 \
+--no_W_D_loss --arcface_checkpoints checkpoints_path/arc_res50/ \
 --eye_dataset CELEBA_DATASET_PATH/eye_croped --load_checkpoint checkpoints_path/weights
+
 ```
