@@ -33,9 +33,9 @@ To use the pre-trained models, download them from the following links then copy 
 ```
 python test.py test --pretrained_models_path PRETRAINED_PATH \
 --load_checkpoint checkpoints_path/weights \
---id_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_ID \
---attr_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_ID \
---mask_dir /content/drive/MyDrive/mizani/Dataset_256/val_celeba_mask \
+--id_dir val_celeba_ID \
+--attr_dir val_celeba_ID \
+--mask_dir val_celeba_mask \
 --output_dir OUTPUT_PATH --test_func opt_infer_pairs --epochnum EPOCH_NUM
 ```
 
