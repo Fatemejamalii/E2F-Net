@@ -19,7 +19,7 @@ To setup everything you need check out the requirements.
 Clone this repo:
 ```
 git clone https://github.com/fatemejamalii/E2F-Net
-cd E2F-Net-master
+cd E2F-Net
 ```
 
 ## Dataset
