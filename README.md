@@ -13,6 +13,26 @@ Official Implementation of the *E2F-Net* for both training and evaluation.
 
 To setup everything you need check out the requirements.
 
-## Training
 
-### Preparing the Dataset
+## Installation
+
+Clone this repo:
+```
+git clone https://github.com/fatemejamalii/E2F-Net
+cd E2F-Net-master
+```
+
+## Dataset
+We conduct all experiments on our generated dataset called [E2Fdb](https://drive.google.com/drive/folders/1ODTrb8EjwwBYkUjTdviQfUok7mvFN8rr?usp=sharing) extracted from the well-known [CelebA-HQ](https://github.com/tkarras/progressive_growing_of_gans) dataset. To extract the periocular region from each face image, the images are reshaped to size  256 ×256 and then by utilizing a landmark detector , eyes are detected. Doing this, I_m and I_c are produced for each image. Moreover, we removed misleading samples including those eyes covered by sunglasses or faces that have more than 45 degrees in one angle (roll, pitch, yaw) leading to hiding one of the eyes by using WHENet algorithms. Finally, the total number of 
+samples is 24,554 among which 22,879 will be used for the training process and the rest, which is 1,685 images, for the test.
+
+# Getting Started
+To use the pre-trained models, download them from the following links then copy them to corresponding checkpoints folder.
+
+### Quick Testing
+```
+```
+
+### Training
+```
+```
