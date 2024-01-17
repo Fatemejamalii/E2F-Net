@@ -38,15 +38,15 @@ To use the pretrained models and checkpoints, download them from the following l
 ```
 python test.py
 NAME
---pretrained_models_path PRETRAINED_PATH 
---load_checkpoint CHECKPOINT_PATH/weights 
+--pretrained_models_path ./pretrained/arcface_weights/
+--load_checkpoint ./checkpoints
+--arcface_checkpoints ./pretrained/arcface_weights/
 --id_dir VAL_IMAGES
---mask_dir VAL_IMAGES 
+--mask_dir VAL_IMAGES
+--eye_dir VAL_EYES
 --output_dir OUTPUT_PATH
 --test_func opt_infer_pairs
 --epochnum EPOCH_NUM
---arcface_checkpoints CHECKPOINT_PATH/arcface_checkpoints
---eye_dir VAL_EYES
 ```
 
 ### Training
@@ -54,22 +54,25 @@ NAME
 python main.py 
 NAME
 --resolution 256
---pretrained_models_path PRETRAINED_PATH 
+--pretrained_models_path ./pretrained
+--load_checkpoint ./checkpoints
+--arcface_checkpoints ./pretrained/arcface_weights/
+--results_dir RESULTS_DIR
+--dataset_path DATASET256
+--celeba_path CELEBA_DATASET_PATH 
+--celeba_ws_path CELEBA_DATASET_PATH
+--eye_dataset CELEBA_DATASET_PATH/eyes
 --batch_size BATCHSIZE
 --cross_frequency 0
 --train_data_size 24554
 --test_frequency 1000 
---results_dir RESULTS_DIR
---dataset_path DATASET256
 --no_train_real_attr 
 --no_test_real_attr
 --no_test_with_arcface
---celeba_path CELEBA_DATASET_PATH 
---celeba_ws_path CELEBA_DATASET_PATH
 --wich_dataset celeba
 --initial_epoch 0 
 --no_W_D_loss
---arcface_checkpoints checkpoints_path/arc_res50/ 
---eye_dataset CELEBA_DATASET_PATH/eye_croped
---load_checkpoint checkpoints_path/weights
+
+
+
 ```
