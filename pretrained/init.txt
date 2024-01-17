@@ -1,1 +1,1 @@
-please download pretrained folder from the pretraind link and replace here
+please download pretrained folder from the shared link and replace here
