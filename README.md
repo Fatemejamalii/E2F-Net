@@ -32,7 +32,7 @@ samples is 24,554 among which 22,879 will be used for the training process and t
 # Getting Started
 To use the pretrained models and checkpoints, download them from the following links then copy them to the pretrained folder and the checkpoints folder.
 
-[Weights](https://drive.google.com/drive/folders/1ldDLG5BJ_maigW0ObR8ynFSSyhxaZKXZ?usp=sharing)
+[Weights](https://drive.google.com/drive/folders/18hGuGPvW3cHdqDt8yVCJsNjOeDDpO2pG?usp=drive_link)
 
 ### Quick Testing
 ```
