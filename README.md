@@ -26,7 +26,7 @@ git clone https://github.com/fatemejamalii/E2F-Net && cd E2F-Net
 ```
 
 ## Dataset
-We conduct all experiments on our generated dataset called ؟؟؟ extracted from the well-known [CelebA-HQ](https://github.com/tkarras/progressive_growing_of_gans) dataset. To extract the periocular region from each face image, the images are reshaped to size  256 ×256 and then by utilizing a landmark detector , eyes are detected. Doing this, I_m and I_c are produced for each image. Moreover, we removed misleading samples including those eyes covered by sunglasses or faces that have more than 45 degrees in one angle (roll, pitch, yaw) leading to hiding one of the eyes by using WHENet algorithms. Finally, the total number of 
+We conduct all experiments on our generated dataset called [E2F-Net_db](https://drive.google.com/drive/folders/1CPsk5wyO8VW5JoabWOIN39Bt9RStcgqB?usp=drive_link) extracted from the well-known [CelebA-HQ](https://github.com/tkarras/progressive_growing_of_gans) dataset. To extract the periocular region from each face image, the images are reshaped to size  256 ×256 and then by utilizing a landmark detector , eyes are detected. Doing this, I_m and I_c are produced for each image. Moreover, we removed misleading samples including those eyes covered by sunglasses or faces that have more than 45 degrees in one angle (roll, pitch, yaw) leading to hiding one of the eyes by using WHENet algorithms. Finally, the total number of 
 samples is 24,554 among which 22,879 will be used for the training process and the rest, which is 1,685 images, for the test.
 
 # Getting Started
@@ -72,7 +72,4 @@ NAME
 --wich_dataset celeba
 --initial_epoch 0 
 --no_W_D_loss
-
-
-
 ```
