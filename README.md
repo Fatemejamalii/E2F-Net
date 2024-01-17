@@ -30,7 +30,9 @@ We conduct all experiments on our generated dataset called ؟؟؟ extracted from
 samples is 24,554 among which 22,879 will be used for the training process and the rest, which is 1,685 images, for the test.
 
 # Getting Started
-To use the pre-trained models, download them from the following links then copy them to corresponding checkpoints folder.
+To use the pretrained models and checkpoints, download them from the following links then copy them to the pretrained folder and the checkpoints folder.
+
+[Weights](https://drive.google.com/drive/folders/1ldDLG5BJ_maigW0ObR8ynFSSyhxaZKXZ?usp=sharing)
 
 ### Quick Testing
 ```
