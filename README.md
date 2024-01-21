@@ -44,6 +44,7 @@ NAME
 --id_dir VAL_IMAGES
 --mask_dir VAL_IMAGES
 --eye_dir VAL_EYES
+--eye_dataset VAL_EYES
 --output_dir OUTPUT_PATH
 --test_func opt_infer_pairs
 --epochnum EPOCH_NUM
