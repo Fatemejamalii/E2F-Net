@@ -50,8 +50,8 @@ class Trainer(object):
         self.pixel_ll=[]
         self.perceptual_ll = []
           #WandB
-        wandb.login(key='b56a5d7a531074d92b0cdc24f9e3df4c762267cc')
-		wandb.init(project="model_with_Arcface_test_3_ahmad")
+	wandb.login(key='b56a5d7a531074d92b0cdc24f9e3df4c762267cc')
+	wandb.init(project="model_with_Arcface_test_3_ahmad")
         self.vgg19_model = keras.applications.VGG19(include_top=False,input_shape=(256,256,3))
         self.perceptual_model = perc_model(self.vgg19_model)
         self.model = model
