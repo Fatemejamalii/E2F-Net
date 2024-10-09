@@ -40,7 +40,7 @@ python test.py
 NAME
 --pretrained_models_path ./pretrained/arcface_weights/
 --load_checkpoint ./checkpoints
---arcface_checkpoints ./pretrained/arcface_weights/
+--arcface_checkpoints ./pretrained/arcface_checkpoint/
 --id_dir VAL_IMAGES
 --mask_dir VAL_IMAGES
 --eye_dir VAL_EYES
@@ -57,7 +57,7 @@ NAME
 --resolution 256
 --pretrained_models_path ./pretrained
 --load_checkpoint ./checkpoints
---arcface_checkpoints ./pretrained/arcface_weights/
+--arcface_checkpoints ./pretrained/arcface_checkpoint/
 --results_dir RESULTS_DIR
 --dataset_path DATASET256
 --celeba_path CELEBA_DATASET_PATH 
