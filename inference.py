@@ -48,10 +48,10 @@ class Inference(object):
             id_path = utils.find_file_by_str(self.args.id_dir, img_name.stem)
             mask_path = utils.find_file_by_str(self.args.mask_dir, img_name.stem)
             eye_path = utils.find_file_by_str(self.args.eye_dir, img_name.stem)
-            attr_path = utils.find_file_by_str(self.args.attr_dir, img_name.stem)
-            if len(id_path) != 1 or len(attr_path) != 1:
-                print(f'Could not find a single pair with name: {img_name.stem}')
-                continue
+            # attr_path = utils.find_file_by_str(self.args.attr_dir, img_name.stem)
+            # if len(id_path) != 1 or len(attr_path) != 1:
+            #     print(f'Could not find a single pair with name: {img_name.stem}')
+            #     continue
 
             id_img = utils.read_image(id_path[0], self.args.resolution)
             gt_img = id_img
